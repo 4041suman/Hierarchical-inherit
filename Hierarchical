@@ -1,0 +1,28 @@
+class Hierarchical {
+    public static void main(String[] args) {
+      Mother obj = new Mother();
+       Uncle ob = new Uncle();
+        obj.sample();
+        System.out.println(obj.gender);
+        ob.sample();
+        System.out.println(ob.gender);
+    }
+}
+class GrandFather{
+    char gender ='M';
+    void sample(){
+        System.out.println("Grandfa");
+    }
+}
+class Mother extends GrandFather{
+    char gender ='F';
+    void sample(){
+        System.out.println("Mother");
+    }
+}
+class Uncle extends GrandFather{
+    char gender ='M';
+    void sample(){
+        System.out.println("Uncle");
+    }
+}
